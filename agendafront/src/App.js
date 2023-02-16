@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import {Switch, Route, Link} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 
@@ -34,14 +34,14 @@ class App extends Component {
                   </div>
               </nav>
 
-              <div className="container mt-3">
-                  <Switch>
-                      {/*<Route exact path={["/", "/home"} component={PersonList}/>*/}
-                      {/*<Route exact path="/add" component={AddPerson}/>*/}
-                      {/*<Route exact path="/edit/:id" component={Person}/>*/}
-                      {/*<Route exact path="/delete/:id" component={Person}/>*/}
-                  </Switch>
-              </div>
+              {/*<div className="container mt-3">*/}
+              {/*    <Switch>*/}
+              {/*        /!*<Route exact path={["/", "/home"} component={PersonList}/>*!/*/}
+              {/*        /!*<Route exact path="/add" component={AddPerson}/>*!/*/}
+              {/*        /!*<Route exact path="/edit/:id" component={Person}/>*!/*/}
+              {/*        /!*<Route exact path="/delete/:id" component={Person}/>*!/*/}
+              {/*    </Switch>*/}
+              {/*</div>*/}
 
           </div>
       );
