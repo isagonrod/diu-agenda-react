@@ -9,7 +9,7 @@ const AddContact = () => {
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [birthday, setBirthday] = useState('');
-    const history = useNavigate();
+    const navigate = useNavigate();
     const {id} = useParams();
 
     const saveOrUpdateContact = (e) => {
@@ -19,14 +19,14 @@ const AddContact = () => {
 
         if (id) {
             ContactService.updateContact(id, contact).then(() => {
-                history.push('/contacts');
+                navigate('/contacts');
             }).catch(error => {
                 console.log(error);
             });
         } else {
             ContactService.createContact(contact).then((response) => {
                 console.log(response.data);
-                history.push('/contacts');
+                navigate('/contacts');
             }).catch(error => {
                 console.log(error);
             });
