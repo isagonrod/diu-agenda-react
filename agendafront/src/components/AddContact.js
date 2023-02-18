@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import {Link, useNavigate, useParams} from "react-router-dom";
 import ContactService from "../services/ContactService";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const AddContact = () => {
 
     const [firstName, setFirstName] = useState('');

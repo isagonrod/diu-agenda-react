@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import ContactService from "../services/ContactService";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const ListContacts = () => {
     const [contacts, setContacts] = useState([]);
 
