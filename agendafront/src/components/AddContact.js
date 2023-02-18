@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Link, useHistory, useParams} from "react";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import ContactService from "../services/ContactService";
 
 const AddContact = () => {
@@ -9,7 +9,7 @@ const AddContact = () => {
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [birthday, setBirthday] = useState('');
-    const history = useHistory();
+    const history = useNavigate();
     const {id} = useParams();
 
     const saveOrUpdateContact = (e) => {
