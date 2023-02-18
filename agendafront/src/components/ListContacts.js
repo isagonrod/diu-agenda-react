@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import ContactService from "../services/ContactService";
-import Button from "bootstrap/js/src/button";
 
 const ListContacts = () => {
     const [contacts, setContacts] = useState([]);
@@ -20,7 +19,7 @@ const ListContacts = () => {
     }
 
     const deleteContact = (contactId) => {
-        ContactService.deleteContact(contactId).then((response) => {
+        ContactService.deleteContact(contactId).then(() => {
             getAllContacts();
         }).catch(error => {
             console.log(error);

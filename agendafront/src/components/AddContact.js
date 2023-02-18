@@ -18,7 +18,7 @@ const AddContact = () => {
         const contact = {firstName, lastName, email, phoneNumber, birthday};
 
         if (id) {
-            ContactService.updateContact(id, contact).then((response) => {
+            ContactService.updateContact(id, contact).then(() => {
                 history.push('/contacts');
             }).catch(error => {
                 console.log(error);
