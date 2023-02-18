@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const CONTACT_API_BASE_URL = "http://localhost:8080/api/v1/contacts";
+const CONTACT_API_BASE_URL = "http://localhost:8081/isagonzalez/contacts";
 
 class ContactService {
     getContacts() {
