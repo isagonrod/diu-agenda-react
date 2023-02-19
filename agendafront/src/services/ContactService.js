@@ -12,7 +12,7 @@ class ContactService {
     }
 
     createContact(contact) {
-        return axios.post(CONTACT_API_BASE_URL + '/', contact);
+        return axios.post(CONTACT_API_BASE_URL, contact);
     }
 
     updateContact(contactId, contact) {
