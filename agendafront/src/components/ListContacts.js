@@ -54,7 +54,7 @@ const ListContacts = () => {
                                 <td>{contact.phoneNumber}</td>
                                 <td>{contact.birthday}</td>
                                 <td>
-                                    <Link className="btn btn-info" to={'/edit-contact/${contact.id}'}>EDIT</Link>
+                                    <Link className="btn btn-info" to={`/edit-contact/${contact.id}`}>EDIT</Link>
                                     <button className="btn btn-danger m1-2" onClick={() => deleteContact(contact.id)}>DELETE</button>
                                 </td>
                             </tr>
