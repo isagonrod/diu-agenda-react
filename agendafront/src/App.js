@@ -3,25 +3,23 @@ import ListContacts from "./components/ListContacts";
 import AddContact from "./components/AddContact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (
         <div>
-            <Router>
-                <Header/>
-                <div className="container">
+            <Header/>
+                <BrowserRouter>
                     <Routes>
-                        <Route exact path = '/' component = {ListContacts} />
-                        <Route path = '/contacts' component = {ListContacts} />
-                        <Route path = '/add-contact' component = {AddContact} />
-                        <Route path = '/edit-contact/:id' component = {AddContact} />
+                        <Route exact path='/' element={<ListContacts/>}/>
+                        <Route path='/contacts' element={<ListContacts/>}/>
+                        <Route path='/add-contact' element={<AddContact/>}/>
+                        <Route path='/edit-contact/:id' element={<AddContact/>}/>
                     </Routes>
-                </div>
-                <Footer/>
-            </Router>
+                </BrowserRouter>
+            <Footer/>
         </div>
     );
 }
