@@ -1,10 +1,7 @@
-import React, {useContext} from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {UserContext} from "../providers/UserProviders";
 
 const Header = () => {
-
-    const user = useContext(UserContext);
 
     return (
         <div>
