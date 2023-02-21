@@ -56,3 +56,9 @@ form input {
 form label {
     color: #6b91f1;
 }
+
+thead {
+    text-align: center;
+    background-color: #ff0088;
+    color: #f1d0e2;
+}
