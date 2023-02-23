@@ -62,3 +62,7 @@ thead {
     background-color: #ff0088;
     color: #f1d0e2;
 }
+
+tbody {
+    text-align: center;
+}
