@@ -31,7 +31,11 @@ const ListContacts = () => {
     return (
         <div className="container">
             <h2 className="text-center">AGENDA</h2>
-            <Link to="/add-contact" className="btn btn-primary mb-2">ADD CONTACT</Link>
+            <Link to="/add-contact" className="btn">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlWx2r-8LmBxdRNhzemfYjrkDOxjpopbvvcA&usqp=CAU"
+                    alt="ADD CONTACT"/>
+            </Link>
             <table className="table table-bordered table-striped">
                 <thead>
                     <th>ID</th>
@@ -54,8 +58,16 @@ const ListContacts = () => {
                                 <td>{contact.phoneNumber}</td>
                                 <td>{contact.birthday}</td>
                                 <td>
-                                    <Link className="btn btn-info" to={`/edit-contact/${contact.id}`}>EDIT</Link>
-                                    <button className="btn btn-danger m1-2" onClick={() => deleteContact(contact.id)}>DELETE</button>
+                                    <Link className="btn btn-info" to={`/edit-contact/${contact.id}`}>
+                                        <img
+                                            src="https://www.graphicsfuel.com/wp-content/uploads/2012/07/pencil-icon-512.png"
+                                            alt="EDIT" />
+                                    </Link>
+                                    <button className="btn btn-danger m1-2" onClick={() => deleteContact(contact.id)}>
+                                        <img
+                                            src="https://e1.pngegg.com/pngimages/638/60/png-clipart-free-worlds-league-desktop-recycle-bin-full-marik-icon-thumbnail.png"
+                                            alt="DELETE" />
+                                    </button>
                                 </td>
                             </tr>
                     )
