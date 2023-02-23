@@ -8,9 +8,6 @@ const Auth = (props) => {
     const [password, setPassword] = useState('');
     const user = useContext(UserContext);
 
-    //const user = useUser();
-    //const auth = getAuth();
-
     const signIn = async () => {
         await auth.signInWithEmailAndPassword(email, password);
     }
