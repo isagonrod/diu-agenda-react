@@ -58,12 +58,12 @@ const ListContacts = () => {
                                 <td>{contact.phoneNumber}</td>
                                 <td>{contact.birthday}</td>
                                 <td>
-                                    <Link className="btn btn-info" to={`/edit-contact/${contact.id}`}>
+                                    <Link className="btn" to={`/edit-contact/${contact.id}`}>
                                         <img
                                             src="https://www.graphicsfuel.com/wp-content/uploads/2012/07/pencil-icon-512.png"
                                             alt="EDIT" />
                                     </Link>
-                                    <button className="btn btn-danger m1-2" onClick={() => deleteContact(contact.id)}>
+                                    <button className="btn" onClick={() => deleteContact(contact.id)}>
                                         <img
                                             src="https://e1.pngegg.com/pngimages/638/60/png-clipart-free-worlds-league-desktop-recycle-bin-full-marik-icon-thumbnail.png"
                                             alt="DELETE" />

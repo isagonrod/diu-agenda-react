@@ -11,14 +11,14 @@ function App() {
     return (
         <div>
             <Header/>
-                <BrowserRouter>
-                    <Routes>
-                        <Route exact path='/' element={<ListContacts/>}/>
-                        <Route path='/contacts' element={<ListContacts/>}/>
-                        <Route path='/add-contact' element={<AddContact/>}/>
-                        <Route path='/edit-contact/:id' element={<AddContact/>}/>
-                    </Routes>
-                </BrowserRouter>
+            <BrowserRouter>
+                <Routes>
+                    <Route exact path='/' element={<ListContacts/>}/>
+                    <Route path='/contacts' element={<ListContacts/>}/>
+                    <Route path='/add-contact' element={<AddContact/>}/>
+                    <Route path='/edit-contact/:id' element={<AddContact/>}/>
+                </Routes>
+            </BrowserRouter>
             <Footer/>
         </div>
     );
