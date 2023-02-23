@@ -1,7 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
-import { functions } from "firebase";
+import { functions } from "src/config/firebase";
 
 // Your web app's Firebase configuration
 // Import the functions you need from the SDKs you need

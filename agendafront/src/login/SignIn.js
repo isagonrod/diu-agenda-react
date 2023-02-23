@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import { signInWithGoogle } from "../firebase";
-import { auth } from "../firebase";
+import { signInWithGoogle } from "../config/firebase";
+import { auth } from "../config/firebase";
 
 
 const SignIn = () => {
