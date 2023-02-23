@@ -38,7 +38,6 @@ const ListContacts = () => {
             </Link>
             <table className="table table-bordered table-striped">
                 <thead>
-                    <th>ID</th>
                     <th>FIRST NAME</th>
                     <th>LAST NAME</th>
                     <th>EMAIL</th>
@@ -51,7 +50,6 @@ const ListContacts = () => {
                     contacts.map(
                         contact =>
                             <tr key = {contact.id}>
-                                <td>{contact.id}</td>
                                 <td>{contact.firstName}</td>
                                 <td>{contact.lastName}</td>
                                 <td>{contact.email}</td>
@@ -65,7 +63,7 @@ const ListContacts = () => {
                                     </Link>
                                     <button className="btn" onClick={() => deleteContact(contact.id)}>
                                         <img
-                                            src="https://e1.pngegg.com/pngimages/638/60/png-clipart-free-worlds-league-desktop-recycle-bin-full-marik-icon-thumbnail.png"
+                                            src="https://cdn-icons-png.flaticon.com/512/3143/3143497.png"
                                             alt="DELETE" />
                                     </button>
                                 </td>
