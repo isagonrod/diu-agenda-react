@@ -6,11 +6,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const countContacts = () => {
     let count;
+
     count = ContactService.getContacts().then((response) => {
         return response.data.length;
     }).catch(error => {
         console.log(error);
     });
+
     return count;
 }
 

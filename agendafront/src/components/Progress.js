@@ -9,14 +9,13 @@ function Progress() {
         countContacts()
             .then(contactAmount => setContactAmount(contactAmount))
             .catch(error => {
-                // handle any error state, rejected promises, etc..
+                console.log(error);
             });
     }, []);
 
-    const now = countContacts();
-    const max = 50;
+    const now = parseInt(countContacts());
     console.log(now);
-    return <ProgressBar animated now={now} max={max} label={`${now}%`} />;
+    return <ProgressBar animated now={now} label={`${now} contacts - ${now * 2} %`} />;
 }
 
 export default Progress;
