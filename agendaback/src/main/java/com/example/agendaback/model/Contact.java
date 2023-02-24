@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -24,5 +25,5 @@ public class Contact {
     private String lastName;
     private String email;
     private Integer phoneNumber;
-    private Date birthday;
+    private LocalDate birthday;
 }
