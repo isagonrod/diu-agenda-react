@@ -75,6 +75,12 @@ footer {
     display: flex;
 }
 
+span {
+    margin-left: 1vh;
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+}
+
 .progress {
     width: 60vh;
     margin-top: 1vh;
