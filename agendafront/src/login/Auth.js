@@ -1,14 +1,12 @@
-import React, {useState} from "react";
-import { useUser } from "reactfire";
-import { getAuth } from "firebase/auth";
-import "firebase/compat/auth";
+import React, {useContext, useState} from "react";
+import "firebase/auth";
+import {auth} from "../config/firebase";
+import {UserContext} from "../providers/UserProvider";
 
 const Auth = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
-    const user = useUser();
-    const auth = getAuth();
+    const user = useContext(UserContext);
 
     const signIn = async () => {
         await auth.signInWithEmailAndPassword(email, password);
