@@ -68,11 +68,11 @@ const ListContacts = () => {
                                     <Link className="btn" to={`/edit-contact/${contact.id}`}>
                                         <img
                                             src="https://www.graphicsfuel.com/wp-content/uploads/2012/07/pencil-icon-512.png"
-                                            alt="EDIT" />
+                                            alt="EDIT"/>
                                     </Link>
                                     <button className="btn" onClick={() => deleteContact(contact.id)}>
                                         <img
-                                            src="https://cdn-icons-png.flaticon.com/512/3143/3143497.png"
+                                            src="https://cdn-icons-png.flaticon.com/512/3221/3221845.png"
                                             alt="DELETE" />
                                     </button>
                                 </td>

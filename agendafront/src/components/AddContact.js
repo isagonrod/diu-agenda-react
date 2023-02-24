@@ -115,8 +115,16 @@ const AddContact = () => {
                                         onChange={(e) => setBirthday(e.target.value)}/>
                                 </div>
                                 <div className="text-center">
-                                    <button className="btn btn-success text-center w-25" onClick={(e) => saveOrUpdateContact(e)}>SAVE</button>
-                                    <Link to="/contacts" className="btn btn-danger text-center m1-2 w-25">CANCEL</Link>
+                                    <button className="btn btn-success text-center w-25" onClick={(e) => saveOrUpdateContact(e)}>
+                                        <img
+                                            src="https://www.freeiconspng.com/uploads/save-download-icon-10.png"
+                                            alt="SAVE"/>
+                                    </button>
+                                    <Link to="/contacts" className="btn btn-danger text-center m1-2 w-25">
+                                        <img
+                                            src="https://www.freeiconspng.com/thumbs/remove-icon-png/remove-icon-png-8.png"
+                                            alt="CANCEL"/>
+                                    </Link>
                                 </div>
                             </form>
                         </div>
