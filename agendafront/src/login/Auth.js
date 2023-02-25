@@ -54,8 +54,8 @@ const Auth = () => {
                     :
 
                 <div>
-                    <p>{email}</p>
-                    <img src={photo} alt={photo.value}/>
+                    <p>HELLO, {email.value}</p>
+                    <img src={photo.value} alt="avatar"/>
                     <input type="submit" className="btn btn-danger" value="LOG OUT" onClick={logout}/>
                 </div>
             }
