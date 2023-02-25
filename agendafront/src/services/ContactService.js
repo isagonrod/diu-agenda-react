@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const CONTACT_API_BASE_URL = "http://localhost:8081/contact";
-
 class ContactService {
+
     getContacts() {
         return axios.get(CONTACT_API_BASE_URL);
     }

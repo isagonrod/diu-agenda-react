@@ -4,11 +4,12 @@ import ContactService from "../services/ContactService";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const countContacts = () => {
+export const countContacts = async () => {
     let count;
 
-    count = ContactService.getContacts().then((response) => {
-        return response.data.length;
+    await ContactService.getContacts().then((response) => {
+        count = response.data.length;
+        console.log(count);
     }).catch(error => {
         console.log(error);
     });
@@ -16,7 +17,7 @@ export const countContacts = () => {
     return count;
 }
 
-const ListContacts = () => {
+const ListContacts = ({stateChanger}) => {
     const [contacts, setContacts] = useState([]);
 
     useEffect(() => {
@@ -26,6 +27,7 @@ const ListContacts = () => {
     const getAllContacts = () => {
         ContactService.getContacts().then((response) => {
             setContacts(response.data);
+            stateChanger(response.data.length);
         }).catch(error => {
             console.log(error);
         });
