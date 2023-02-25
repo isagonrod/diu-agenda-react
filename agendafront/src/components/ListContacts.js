@@ -43,7 +43,7 @@ const ListContacts = ({stateChanger}) => {
 
     return (
         <div className="container">
-            <h2 className="text-center">AGENDA</h2>
+            <h2 className="text-center">MI AGENDA</h2>
             <Link to="/add-contact" className="btn">
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlWx2r-8LmBxdRNhzemfYjrkDOxjpopbvvcA&usqp=CAU"

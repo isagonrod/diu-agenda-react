@@ -87,7 +87,7 @@ const AddContact = () => {
                                 <div className="form-group mb-2">
                                     <label className="form-label">EMAIL: </label>
                                     <input
-                                        type="text"
+                                        type="email"
                                         placeholder="Enter Email"
                                         name="email"
                                         className="form-control"
@@ -97,7 +97,7 @@ const AddContact = () => {
                                 <div className="form-group mb-2">
                                     <label className="form-label">PHONE NUMBER: </label>
                                     <input
-                                        type="text"
+                                        type="number"
                                         placeholder="Enter Phone Number"
                                         name="phoneNumber"
                                         className="form-control"
@@ -107,8 +107,7 @@ const AddContact = () => {
                                 <div className="form-group mb-2">
                                     <label className="form-label">BIRTHDAY: </label>
                                     <input
-                                        type="text"
-                                        placeholder="Enter Birthday"
+                                        type="date"
                                         name="birthday"
                                         className="form-control"
                                         value={birthday}

@@ -2,39 +2,45 @@
     text-align: center;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
+/*.App-logo {*/
+/*    height: 40vmin;*/
+/*    pointer-events: none;*/
+/*}*/
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*    .App-logo {*/
+/*        animation: App-logo-spin infinite 20s linear;*/
+/*    }*/
+/*}*/
 
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
+/*.App-header {*/
+/*    background-color: #282c34;*/
+/*    min-height: 100vh;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    font-size: calc(10px + 2vmin);*/
+/*    color: white;*/
+/*}*/
 
-.App-link {
-    color: #61dafb;
-}
+/*.App-link {*/
+/*    color: #61dafb;*/
+/*}*/
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/*@keyframes App-logo-spin {*/
+/*    from {*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    to {*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
+
+h2 {
+    color: #ff0088;
+    text-shadow: black 1px 1px;
+    font-family: "Cooper Black", sans-serif;
 }
 
 img {
@@ -67,6 +73,10 @@ tbody {
     text-align: center;
 }
 
+header {
+    height: 10vh;
+}
+
 header .btn {
     margin-right: 2vh;
 }
@@ -75,17 +85,23 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 5.5vh;
 }
 
 span {
-    margin-left: 1vh;
-    margin-top: 0.5vh;
+    margin-left: 1.5vh;
+    margin-top: 1vh;
     margin-bottom: 1vh;
 }
 
 .progress {
     width: 60vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-right: 1vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    margin-right: 1.5vh;
+}
+
+.progress .progress-bar {
+    background-color: #ff0088;
+    color: #f1d0e2;
 }
