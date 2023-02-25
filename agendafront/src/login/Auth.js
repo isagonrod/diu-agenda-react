@@ -24,12 +24,13 @@ const Auth = () => {
         <div>
             {
                 user ?
-                    <form>
-                        <label htmlFor="email">EMAIL: </label>
-                        <input type="email" id="email" value={email}/>
+                    <div>
+                        <p>EMAIL: {email}</p>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png"/>
                         <button className="btn btn-primary" onClick={logout}>LOGOUT</button>
-                    </form>
-                :
+                    </div>
+
+                    :
                     <form>
                         <label htmlFor="email">EMAIL: </label>
                         <input type="email" id="email" onChange={(e) => setEmail(e.target.value)}/>
