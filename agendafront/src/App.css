@@ -57,6 +57,7 @@ form {
 form input {
     margin-left: 1vh;
     margin-right: 3vh;
+    width: 15vh;
 }
 
 form label {

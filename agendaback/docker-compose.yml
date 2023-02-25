@@ -4,31 +4,38 @@ networks:
   mired:
     ipam:
       config:
-        - subnet: 182.28.0.0/16
+        - subnet: 182.28.0.0/24
           gateway: 182.28.0.1
-
 services:
   database:
     image: mysql:latest
     container_name: mysql_DB
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
     networks:
       mired:
-        - ipv4_address: 182.28.0.11
+        ipv4_address: 182.28.0.11
     ports:
       - "3306:3306"
     expose:
       - 3306
-
   app-agenda:
     image: igr1985/agenda
+    #build:
+    #  context: ./
+    #  dockerfile: Dockerfile
     container_name: agenda
+    environment:
+      spring.datasource.url: ${MYSQL_DATASOURCE_URL}
+      spring.datasource.username: ${MYSQL_USER}
+      spring.datasource.password: ${MYSQL_PASSWORD}
     networks:
       mired:
-        - ipv4_address: 182.28.0.12
+        ipv4_address: 182.28.0.12
     expose:
       - 8081
     ports:
       - "8081:8081"
     depends_on:
       - database
-
