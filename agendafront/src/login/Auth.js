@@ -13,6 +13,12 @@ const Auth = () => {
 
     const signIn = (event, email, password) => {
         event.preventDefault();
+
+        const patternEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (!patternEmail.test(email) || password.length < 6) {
+            return;
+        }
+
         auth.signInWithEmailAndPassword(email, password).catch(error => {
             setError("Error signing in with password and email");
             if (error.code === "auth/user-not-found") {
@@ -50,7 +56,7 @@ const Auth = () => {
                     <input type="email" id="email" onChange={(e) => setEmail(e.target.value)}/>
 
                     <label htmlFor="password">PASSWORD:</label>
-                    <input type="password" id="password" placeholder="Enter 6 chars" onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" id="password" minLength="6" placeholder="Enter 6 chars" onChange={(e) => setPassword(e.target.value)}/>
 
                     <label htmlFor="photo">AVATAR:</label>
                     <select id="photo" onChange={(e) => {setPhotoURL(e.target.value)}}>

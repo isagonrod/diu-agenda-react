@@ -17,6 +17,12 @@ const AddContact = () => {
     const saveOrUpdateContact = (e) => {
         e.preventDefault();
 
+        const patternEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+        if (!patternEmail.test(email) || phoneNumber.length < 9) {
+            return;
+        }
+
         const contact = {firstName, lastName, email, phoneNumber, birthday};
 
         if (id) {
@@ -53,6 +59,14 @@ const AddContact = () => {
         } else {
             return <h2 className="text-center">ADD CONTACT</h2>
         }
+    }
+
+    const onHandleChangedPhoneNumber = (e) => {
+        const valuePhone = e.target.value;
+        if (isNaN(valuePhone)) {
+            return;
+        }
+        setPhoneNumber(valuePhone);
     }
 
     return (
@@ -97,12 +111,13 @@ const AddContact = () => {
                                 <div className="form-group mb-2">
                                     <label className="form-label">PHONE NUMBER: </label>
                                     <input
-                                        type="number"
+                                        type="tel"
                                         placeholder="Enter Phone Number"
                                         name="phoneNumber"
+                                        maxLength="9"
                                         className="form-control"
                                         value={phoneNumber}
-                                        onChange={(e) => setPhoneNumber(e.target.value)}/>
+                                        onChange={onHandleChangedPhoneNumber}/>
                                 </div>
                                 <div className="form-group mb-2">
                                     <label className="form-label">BIRTHDAY: </label>
