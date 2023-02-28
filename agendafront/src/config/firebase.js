@@ -1,6 +1,11 @@
-import {firestore, initializeApp} from "firebase/app";
+import {initializeApp} from "firebase/app";
 
-const firebaseConfig = {
+import firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
+//import { functions } from "firebase";
+
+export const firebaseConfig = {
     apiKey: "AIzaSyDZnH4YPRLjKpFF96hliwW8t-xHlPSekC8",
     authDomain: "prueba-login-isagonzalez.firebaseapp.com",
     projectId: "prueba-login-isagonzalez",
@@ -14,6 +19,9 @@ const firebaseApp = initializeApp(firebaseConfig);
 export default firebaseApp;
 
 export const auth = firebaseApp.auth();
+
+export const firestore = firebase.firestore();
+
 export const generateUserDocument = async (user, additionalData) => {
     if (!user) return;
     const userRef = firestore.doc(`users/${user.uid}`);

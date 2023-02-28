@@ -1,11 +1,11 @@
 import React, {Component, createContext} from "react";
-import {auth, generateUserDocument} from "../config/firebase";
+import firebaseApp, {auth, generateUserDocument} from "../config/firebase";
 
-export const UserContext = createContext({user: null});
+export const UserContext = createContext({user: undefined});
 
 class UserProvider extends Component {
     state = {
-        user: null
+        user: undefined
     };
 
     componentDidMount = async () => {
@@ -13,8 +13,6 @@ class UserProvider extends Component {
             const user = await generateUserDocument(userAuth);
             this.setState({user});
         });
-
-
     };
 
     render() {

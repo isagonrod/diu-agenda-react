@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import UserProvider from "./providers/UserProvider";
+import {firebaseConfig} from "./config/firebase";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <React.StrictMode>
-        <UserProvider>
+        <UserProvider firebaseConfig={firebaseConfig}>
             <App/>
         </UserProvider>
     </React.StrictMode>
