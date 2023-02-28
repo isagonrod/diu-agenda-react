@@ -9,7 +9,7 @@ const Auth = () => {
     const [email, setEmail] = useState(sessionStorage.getItem("email"));
     const [password, setPassword] = useState('');
     const [photoURL, setPhotoURL] = useState(sessionStorage.getItem("photoURL"));
-    const [error, setError] = useState(null);
+    const [setError] = useState(null);
 
     const signIn = (event, email, password) => {
         event.preventDefault();
