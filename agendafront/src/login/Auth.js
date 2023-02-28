@@ -50,7 +50,7 @@ const Auth = () => {
                     <input type="email" id="email" onChange={(e) => setEmail(e.target.value)}/>
 
                     <label htmlFor="password">PASSWORD:</label>
-                    <input type="password" id="password" placeholder="Enter 6 characters" onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" id="password" placeholder="Enter 6 chars" onChange={(e) => setPassword(e.target.value)}/>
 
                     <label htmlFor="photo">AVATAR:</label>
                     <select id="photo" onChange={(e) => {setPhotoURL(e.target.value)}}>
