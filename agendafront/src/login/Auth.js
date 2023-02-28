@@ -71,6 +71,10 @@ const Auth = () => {
                             value="https://cdn-icons-png.flaticon.com/512/4140/4140048.png">
                             HIM
                         </option>
+                        <option
+                            value="https://cdn-icons-png.flaticon.com/512/4139/4139993.png">
+                            OTHER
+                        </option>
                     </select>
 
                     <input
