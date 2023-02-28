@@ -56,10 +56,13 @@ const Auth = () => {
                     <input type="email" id="email" onChange={(e) => setEmail(e.target.value)}/>
 
                     <label htmlFor="password">PASSWORD:</label>
-                    <input type="password" id="password" minLength="6" placeholder="Enter 6 chars" onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" id="password" minLength="6" placeholder="Enter 6 chars"
+                           onChange={(e) => setPassword(e.target.value)}/>
 
                     <label htmlFor="photo">AVATAR:</label>
-                    <select id="photo" onChange={(e) => {setPhotoURL(e.target.value)}}>
+                    <select id="photo" onChange={(e) => {
+                        setPhotoURL(e.target.value)
+                    }}>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4140/4140047.png">
                             HER
@@ -74,15 +77,20 @@ const Auth = () => {
                         type="submit"
                         className="btn btn-primary"
                         value="ENTER"
-                        onClick={(event) => {signIn(event, email, password)}}
+                        onClick={(event) => {
+                            signIn(event, email, password)
+                        }}
                     />
                 </form>
 
-                    :
+                :
 
                 <div>
-                    <p>WELCOME {email.split('@')[0]}</p>
-                    <img src={photoURL} alt="avatar"/>
+                    <p>WELCOME {email.split('@')[0].toUpperCase()}</p>
+                    <img src={
+                        photoURL === null ?
+                            "https://cdn-icons-png.flaticon.com/512/4139/4139993.png"
+                            : photoURL} alt="avatar"/>
                     <input type="submit" className="btn btn-danger" value="LOG OUT" onClick={logout}/>
                 </div>
             }
