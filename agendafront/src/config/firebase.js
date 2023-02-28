@@ -3,15 +3,14 @@ import {initializeApp} from "firebase/app";
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
-//import { functions } from "firebase";
 
 export const firebaseConfig = {
-    apiKey: "AIzaSyDZnH4YPRLjKpFF96hliwW8t-xHlPSekC8",
-    authDomain: "prueba-login-isagonzalez.firebaseapp.com",
-    projectId: "prueba-login-isagonzalez",
-    storageBucket: "prueba-login-isagonzalez.appspot.com",
-    messagingSenderId: "426204513378",
-    appId: "1:426204513378:web:14044ee24a96141a37fd3b"
+    apiKey: "AIzaSyD-ZpG1pENynB1EpPJ8-FV5xzylhpNW4ZE",
+    authDomain: "agenda-isagonzalez.firebaseapp.com",
+    projectId: "agenda-isagonzalez",
+    storageBucket: "agenda-isagonzalez.appspot.com",
+    messagingSenderId: "889826307097",
+    appId: "1:889826307097:web:dee3a2f3e98da674398e88"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
