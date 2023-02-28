@@ -43,11 +43,6 @@ h2 {
     font-family: "Cooper Black", sans-serif;
 }
 
-p {
-    color: white;
-    display: inline;
-}
-
 img {
     width: 5vh;
     height: 5vh;
@@ -89,6 +84,15 @@ header {
 
 header .btn {
     margin-right: 2vh;
+}
+
+header .auth {
+    align-content: flex-end;
+}
+
+p {
+    color: white;
+    display: inline;
 }
 
 footer {

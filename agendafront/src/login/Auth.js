@@ -43,11 +43,11 @@ const Auth = () => {
     const logout = async () => {
         await auth.signOut();
         sessionStorage.setItem("email", '');
-        sessionStorage.setItem("photoURL", 'https://as1.ftcdn.net/v2/jpg/01/21/93/74/1000_F_121937450_E3o8jRG3mKbMaAFprSuNOlyrLraSVVua.jpg');
+        sessionStorage.setItem("photoURL", 'https://cdn-icons-png.flaticon.com/512/4140/4140047.png');
     }
 
     return (
-        <div>
+        <div className="auth">
 
             {!user ?
 
@@ -61,11 +61,11 @@ const Auth = () => {
                     <label htmlFor="photo">AVATAR:</label>
                     <select id="photo" onChange={(e) => {setPhotoURL(e.target.value)}}>
                         <option
-                            value="https://as1.ftcdn.net/v2/jpg/01/21/93/74/1000_F_121937450_E3o8jRG3mKbMaAFprSuNOlyrLraSVVua.jpg">
+                            value="https://cdn-icons-png.flaticon.com/512/4140/4140047.png">
                             HER
                         </option>
                         <option
-                            value="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg">
+                            value="https://cdn-icons-png.flaticon.com/512/4140/4140048.png">
                             HIM
                         </option>
                     </select>
@@ -81,7 +81,7 @@ const Auth = () => {
                     :
 
                 <div>
-                    <p>HELLO, {email}</p>
+                    <p>WELCOME {email.split('@')[0]}</p>
                     <img src={photoURL} alt="avatar"/>
                     <input type="submit" className="btn btn-danger" value="LOG OUT" onClick={logout}/>
                 </div>
