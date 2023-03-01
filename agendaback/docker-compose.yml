@@ -11,7 +11,7 @@ services:
     image: mysql:latest
     container_name: mysql_DB
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
       MYSQL_DATABASE: ${MYSQL_DATABASE}
     networks:
       mired:
