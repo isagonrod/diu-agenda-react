@@ -55,7 +55,7 @@ const Auth = () => {
                     <label htmlFor="email">EMAIL:</label>
                     <input type="email" id="email" onChange={(e) => setEmail(e.target.value)}/>
 
-                    <label htmlFor="password">PASSWORD:</label>
+                    <label htmlFor="password">CONTRASEÑA:</label>
                     <input type="password" id="password" minLength="6" placeholder="Enter 6 chars"
                            onChange={(e) => setPassword(e.target.value)}/>
 
@@ -65,22 +65,22 @@ const Auth = () => {
                     }}>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4140/4140047.png">
-                            HER
+                            AVATAR 1 - FEMENINO
                         </option>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4140/4140048.png">
-                            HIM
+                            AVATAR 2 - MASCULINO
                         </option>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4139/4139993.png">
-                            OTHER
+                            AVATAR 3 - CALVO
                         </option>
                     </select>
 
                     <input
                         type="submit"
                         className="btn btn-primary"
-                        value="ENTER"
+                        value="ENTRAR"
                         onClick={(event) => {
                             signIn(event, email, password)
                         }}
@@ -95,7 +95,7 @@ const Auth = () => {
                         photoURL === null ?
                             "https://cdn-icons-png.flaticon.com/512/4139/4139993.png"
                             : photoURL} alt="avatar"/>
-                    <input type="submit" className="btn btn-danger" value="LOG OUT" onClick={logout}/>
+                    <input type="submit" className="btn btn-danger" value="SALIR" onClick={logout}/>
                 </div>
             }
 

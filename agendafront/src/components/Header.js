@@ -11,7 +11,7 @@ const Header = () => {
                         <img
                             src="https://cdn-icons-png.flaticon.com/512/6313/6313619.png" alt="AGENDA"/>
                         <a href="/contacts" className="navbar-brand" title="Contact list">
-                            AGENDA
+                            AGENDA &#9997;
                         </a>
                     </div>
                     <Auth/>

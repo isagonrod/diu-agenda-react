@@ -55,9 +55,9 @@ const AddContact = () => {
 
     const title = () => {
         if (id) {
-            return <h2 className="text-center">EDIT CONTACT</h2>
+            return <h2 className="text-center">EDITAR CONTACTO</h2>
         } else {
-            return <h2 className="text-center">ADD CONTACT</h2>
+            return <h2 className="text-center">AÑADIR CONTACTO</h2>
         }
     }
 
@@ -79,7 +79,7 @@ const AddContact = () => {
                         <div className="card-body">
                             <form>
                                 <div className="form-group mb-2">
-                                    <label className="form-label">FIRST NAME: </label>
+                                    <label className="form-label">NOMBRE: </label>
                                     <input
                                         type="text"
                                         placeholder="Enter First Name"
@@ -89,7 +89,7 @@ const AddContact = () => {
                                         onChange={(e) => setFirstName(e.target.value)}/>
                                 </div>
                                 <div className="form-group mb-2">
-                                    <label className="form-label">LAST NAME: </label>
+                                    <label className="form-label">APELLIDOS: </label>
                                     <input
                                         type="text"
                                         placeholder="Enter Last Name"
@@ -109,7 +109,7 @@ const AddContact = () => {
                                         onChange={(e) => setEmail(e.target.value)}/>
                                 </div>
                                 <div className="form-group mb-2">
-                                    <label className="form-label">PHONE NUMBER: </label>
+                                    <label className="form-label">TELÉFONO: </label>
                                     <input
                                         type="tel"
                                         placeholder="Enter Phone Number"
@@ -120,7 +120,7 @@ const AddContact = () => {
                                         onChange={onHandleChangedPhoneNumber}/>
                                 </div>
                                 <div className="form-group mb-2">
-                                    <label className="form-label">BIRTHDAY: </label>
+                                    <label className="form-label">CUMPLEAÑOS: </label>
                                     <input
                                         type="date"
                                         name="birthday"

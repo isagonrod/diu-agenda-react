@@ -56,13 +56,13 @@ const ListContacts = ({stateChanger}) => {
                 </Link> : ''}
             <table className="table table-bordered table-striped">
                 <thead>
-                <th>FIRST NAME</th>
-                <th>LAST NAME</th>
+                <th>NOMBRE</th>
+                <th>APELLIDOS</th>
                 <th>EMAIL</th>
-                <th>PHONE NUMBER</th>
-                <th>BIRTHDAY</th>
+                <th>TELÉFONO</th>
+                <th>CUMPLEAÑOS</th>
                 {user ?
-                    <th>ACTIONS</th> : ''}
+                    <th>ACCIONES</th> : ''}
                 </thead>
                 <tbody>
                 {
