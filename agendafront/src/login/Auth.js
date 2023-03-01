@@ -90,7 +90,7 @@ const Auth = () => {
                 :
 
                 <div>
-                    <p>WELCOME {email.split('@')[0].toUpperCase()}</p>
+                    <p>HOLA {email.split('@')[0].toUpperCase()}, ¿QUÉ QUIERES HACER HOY?</p>
                     <img src={
                         photoURL === null ?
                             "https://cdn-icons-png.flaticon.com/512/4139/4139993.png"
