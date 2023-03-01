@@ -10,7 +10,7 @@ const Header = () => {
                     <div>
                         <img
                             src="https://cdn-icons-png.flaticon.com/512/6313/6313619.png" alt="AGENDA"/>
-                        <a href="/contacts" className="navbar-brand" title="Contact list">
+                        <a href="/contacts" className="navbar-brand" title="Lista de contactos">
                             AGENDA &#9997;
                         </a>
                     </div>

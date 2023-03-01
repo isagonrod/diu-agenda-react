@@ -56,7 +56,7 @@ const Auth = () => {
                     <input type="email" id="email" onChange={(e) => setEmail(e.target.value)}/>
 
                     <label htmlFor="password">CONTRASEÑA:</label>
-                    <input type="password" id="password" minLength="6" placeholder="Enter 6 chars"
+                    <input type="password" id="password" minLength="6"
                            onChange={(e) => setPassword(e.target.value)}/>
 
                     <label htmlFor="photo">AVATAR:</label>
@@ -65,11 +65,11 @@ const Auth = () => {
                     }}>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4140/4140047.png">
-                            AVATAR 1 - FEMENINO
+                            AVATAR 1 - ELLA
                         </option>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4140/4140048.png">
-                            AVATAR 2 - MASCULINO
+                            AVATAR 2 - ÉL
                         </option>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4139/4139993.png">

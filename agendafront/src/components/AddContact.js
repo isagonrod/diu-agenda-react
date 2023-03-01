@@ -82,7 +82,6 @@ const AddContact = () => {
                                     <label className="form-label">NOMBRE: </label>
                                     <input
                                         type="text"
-                                        placeholder="Enter First Name"
                                         name="firstName"
                                         className="form-control"
                                         value={firstName}
@@ -92,7 +91,6 @@ const AddContact = () => {
                                     <label className="form-label">APELLIDOS: </label>
                                     <input
                                         type="text"
-                                        placeholder="Enter Last Name"
                                         name="lastName"
                                         className="form-control"
                                         value={lastName}
@@ -102,7 +100,6 @@ const AddContact = () => {
                                     <label className="form-label">EMAIL: </label>
                                     <input
                                         type="email"
-                                        placeholder="Enter Email"
                                         name="email"
                                         className="form-control"
                                         value={email}
@@ -112,7 +109,6 @@ const AddContact = () => {
                                     <label className="form-label">TELÉFONO: </label>
                                     <input
                                         type="tel"
-                                        placeholder="Enter Phone Number"
                                         name="phoneNumber"
                                         maxLength="9"
                                         className="form-control"
@@ -132,12 +128,14 @@ const AddContact = () => {
                                     <button className="btn" onClick={(e) => saveOrUpdateContact(e)}>
                                         <img
                                             src="https://www.freeiconspng.com/uploads/save-download-icon-10.png"
-                                            alt="SAVE"/>
+                                            alt="SAVE"
+                                            title="Guardar"/>
                                     </button>
                                     <Link to="/contacts" className="btn">
                                         <img
                                             src="https://www.freeiconspng.com/thumbs/remove-icon-png/remove-icon-png-8.png"
-                                            alt="CANCEL"/>
+                                            alt="CANCEL"
+                                            title="Cancelar"/>
                                     </Link>
                                 </div>
                             </form>

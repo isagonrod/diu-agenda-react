@@ -52,7 +52,8 @@ const ListContacts = ({stateChanger}) => {
                 <Link to="/add-contact" className="btn">
                     <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlWx2r-8LmBxdRNhzemfYjrkDOxjpopbvvcA&usqp=CAU"
-                        alt="ADD CONTACT"/>
+                        alt="ADD CONTACT"
+                        title="Añadir contacto"/>
                 </Link> : ''}
             <table className="table table-bordered table-striped">
                 <thead>
@@ -79,12 +80,14 @@ const ListContacts = ({stateChanger}) => {
                                         <Link className="btn" to={`/edit-contact/${contact.id}`}>
                                             <img
                                                 src="https://www.graphicsfuel.com/wp-content/uploads/2012/07/pencil-icon-512.png"
-                                                alt="EDIT"/>
+                                                alt="EDIT"
+                                                title="Editar contacto"/>
                                         </Link>
                                         <button className="btn" onClick={() => deleteContact(contact.id)}>
                                             <img
                                                 src="https://cdn-icons-png.flaticon.com/512/3221/3221845.png"
-                                                alt="DELETE"/>
+                                                alt="DELETE"
+                                                title="Eliminar contacto"/>
                                         </button>
                                     </td>
                                     :
