@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const CONTACT_API_BASE_URL = "http://localhost:8081/contact";
+const CONTACT_API_BASE_URL = "https://agenda.us-east-1.elasticbeanstalk.com/contact";
 class ContactService {
 
     getContacts() {
