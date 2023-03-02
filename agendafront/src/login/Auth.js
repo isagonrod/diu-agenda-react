@@ -65,15 +65,19 @@ const Auth = () => {
                     }}>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4140/4140047.png">
-                            AVATAR 1 - ELLA
+                            AVATAR 1
                         </option>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4140/4140048.png">
-                            AVATAR 2 - ÉL
+                            AVATAR 2
                         </option>
                         <option
                             value="https://cdn-icons-png.flaticon.com/512/4139/4139993.png">
-                            AVATAR 3 - CALVO
+                            AVATAR 3
+                        </option>
+                        <option
+                            value="https://cdn-icons-png.flaticon.com/512/1776/1776689.png">
+                            AVATAR 4
                         </option>
                     </select>
 
