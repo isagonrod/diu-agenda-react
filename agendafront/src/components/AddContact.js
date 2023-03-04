@@ -42,15 +42,17 @@ const AddContact = () => {
     }
 
     useEffect(() => {
-        ContactService.getContactById(id).then((response) => {
-            setFirstName(response.data.firstName)
-            setLastName(response.data.lastName)
-            setEmail(response.data.email)
-            setPhoneNumber(response.data.phoneNumber)
-            setBirthday(response.data.birthday)
-        }).catch(error => {
-            console.log(error);
-        });
+        if (typeof(id) != "undefined") {
+            ContactService.getContactById(id).then((response) => {
+                setFirstName(response.data.firstName)
+                setLastName(response.data.lastName)
+                setEmail(response.data.email)
+                setPhoneNumber(response.data.phoneNumber)
+                setBirthday(response.data.birthday)
+            }).catch(error => {
+                console.log(error);
+            });
+        }
     }, []);
 
     const title = () => {
