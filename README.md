@@ -74,4 +74,12 @@ A continuación se muestra una serie de pantallazos con las pruebas unitarias re
 ![image](https://user-images.githubusercontent.com/98974760/222925054-d61c1f16-3c27-4e4b-b7c7-f4c5df09a138.png)
 
 
-## PRUEBAS CON JENKINGS
+## CREACIÓN DE UN _PIPELINE_ EN JENKINGS
+Para poder hacer el _Pipeline_ en Jenkins hay que seguir los siguientes pasos:
+1. Loguearse en la cuenta de AWS.
+2. Entrar en el Learner Lab y darle a Start Lab.
+3. Lanzar la instancia creada para subir la aplicación a Amazon en EC2.
+4. Seleccionar 'Conectar' y 'Cliente SSH'. Copiar el comando y pegarlo en un terminal.
+5. Escribir el comando ``$ sudo chmod 400 <nombre.pem>`` para darle los permisos necesarios.
+6. Escribir el comando ``$ sudo su`` para pasar a ser superusuario.
+7. 
