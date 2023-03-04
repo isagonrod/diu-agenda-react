@@ -1,6 +1,12 @@
-# diu-agenda-react
+# AGENDA DE ISA GONZÁLEZ
 
-El back se ha subido a AWS, utilizando __elastic beanstalk__. Para ello, una vez hemos entrado en el Learner Lab y hemos seleccionado dicha opción, he seguido los siguientes pasos:
+## FRONT
+
+El __FRONT__ de la AGENDA se ha subido a Firebase.
+
+## BACK
+
+El __BACK__ de la AGENDA se ha subido a AWS, utilizando __elastic beanstalk__. Para ello, una vez hemos entrado en el Learner Lab y hemos seleccionado dicha opción, he seguido los siguientes pasos:
 
 1. He seleccionado 'Aplicaciones' de la columna de la izquierda y pulsado sobre 'Crear nueva aplicación'.
 2. De plataformas he elegido 'Docker'.
