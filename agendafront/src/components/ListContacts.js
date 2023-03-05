@@ -55,7 +55,7 @@ const ListContacts = ({stateChanger}) => {
                         alt="ADD CONTACT"
                         title="Añadir contacto"/>
                 </Link> : ''}
-            <table className="table table-bordered table-striped">
+            <table className="table table-bordered table-striped table-hover table-responsive-xl">
                 <thead>
                 <th>NOMBRE</th>
                 <th>APELLIDOS</th>

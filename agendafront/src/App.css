@@ -48,6 +48,15 @@ tbody {
     text-align: center;
 }
 
+td img {
+    width: 3vh;
+    height: 3vh;
+}
+
+.table tr:hover {
+    background-color: #c1a4f6;
+}
+
 header {
     height: 14vh;
 }

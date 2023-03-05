@@ -42,7 +42,7 @@ const AddContact = () => {
     }
 
     useEffect(() => {
-        if (typeof(id) != "undefined") {
+        if (typeof (id) != "undefined") {
             ContactService.getContactById(id).then((response) => {
                 setFirstName(response.data.firstName)
                 setLastName(response.data.lastName)
