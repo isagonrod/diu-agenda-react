@@ -1,0 +1,8 @@
+URLs del Front y del Back de AGENDA
+
+Front: https://agenda-isagonzalez.web.app/
+Back: http://agenda.us-east-1.elasticbeanstalk.com/contact
+
+______________________________________________________________________________
+## NOTA:
+## Si el servidor de Amazon no está iniciado, no funciona ninguna de las URLs.
