@@ -1,12 +1,12 @@
 # AGENDA DE ISA GONZÁLEZ
 
 ## ÍNDICE
-1. [Casos de uso expuestos en el enunciado](https://github.com/isagonrod/diu-agenda-react/edit/main/README.md#casos-de-uso)
-2. [URLs de los servicios](https://github.com/isagonrod/diu-agenda-react/edit/main/README.md#urls-de-los-servicios)
-3. [Front-End](https://github.com/isagonrod/diu-agenda-react/edit/main/README.md#front-end)
-4. [Back-End](https://github.com/isagonrod/diu-agenda-react/edit/main/README.md#back-end)
-5. [Pruebas con Postman](https://github.com/isagonrod/diu-agenda-react/edit/main/README.md#pruebas-con-postman)
-6. [Pruebas con Jenkins](https://github.com/isagonrod/diu-agenda-react/edit/main/README.md#pruebas-con-jenkings)
+1. [Casos de uso expuestos en el enunciado](https://github.com/isagonrod/diu-agenda-react#casos-de-uso)
+2. [URLs de los servicios](https://github.com/isagonrod/diu-agenda-react#urls-de-los-servicios)
+3. [Front-End](https://github.com/isagonrod/diu-agenda-react#front-end)
+4. [Back-End](https://github.com/isagonrod/diu-agenda-react#back-end)
+5. [Pruebas con Postman](https://github.com/isagonrod/diu-agenda-react#pruebas-con-postman)
+6. [Pruebas con Jenkins](https://github.com/isagonrod/diu-agenda-react#pruebas-con-jenkings)
 
 ![image](https://cdn-icons-png.flaticon.com/512/6313/6313619.png)
 
