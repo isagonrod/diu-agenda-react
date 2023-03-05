@@ -19,8 +19,12 @@ const AddContact = () => {
 
         const patternEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-        if (!patternEmail.test(email) || phoneNumber.length < 9) {
-            return;
+        if (!patternEmail.test(email)) {
+            return alert("Formato incorrecto de correo electrónico");
+        }
+
+        if (phoneNumber.length < 9) {
+            return alert("Introduce un número de 9 dígitos");
         }
 
         const contact = {firstName, lastName, email, phoneNumber, birthday};
@@ -66,7 +70,7 @@ const AddContact = () => {
     const onHandleChangedPhoneNumber = (e) => {
         const valuePhone = e.target.value;
         if (isNaN(valuePhone)) {
-            return;
+            return alert("No es un número lo que quieres introducir");
         }
         setPhoneNumber(valuePhone);
     }
