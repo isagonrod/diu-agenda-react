@@ -46,7 +46,7 @@ const ListContacts = ({stateChanger}) => {
     const user = useContext(UserContext);
 
     return (
-        <div className="container">
+        <div className="container container-max-height">
             <h2 className="text-center">MI AGENDA</h2>
             {user ?
                 <Link to="/add-contact" className="btn">

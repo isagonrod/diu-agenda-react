@@ -74,9 +74,9 @@ const AddContact = () => {
     return (
         <div>
             <br/><br/>
-            <div className="container">
+            <div className="container container-min-height">
                 <div className="row">
-                    <div className="card col-md-6 offset-md-3">
+                    <div className="col-md-6 offset-md-3">
                         {title()}
                         <div className="card-body">
                             <form>
