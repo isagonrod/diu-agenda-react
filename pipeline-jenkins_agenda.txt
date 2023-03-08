@@ -60,9 +60,9 @@ pipeline {
                         withCredentials([string(credentialsId: 'github', variable: 'TOKEN')]) {
                             echo 'Eliminamos rama PRO actual y la recreamos localmente'
                             //Eliminamos la rama pro actual
-                            //sh 'git push https://$TOKEN@github.com/${repo_name} -d pro'
+                            sh 'git push https://$TOKEN@github.com/${repo_name} -d pro'
                             //Volvemos a crearla con el contenido de la rama master
-                            //sh 'git checkout -b pro master'
+                            sh 'git checkout -b pro master'
                         }
                     }
                 }
@@ -75,7 +75,7 @@ pipeline {
                     dir(projectdir_name) {
                         withCredentials([string(credentialsId: 'github', variable: 'TOKEN')]) {
                             echo 'Push a PRO de la nueva rama local'
-                            //sh 'git push --set-upstream https://$TOKEN@github.com/${repo_name} pro'
+                            sh 'git push --set-upstream https://$TOKEN@github.com/${repo_name} pro'
                         }
                     }
                 }
