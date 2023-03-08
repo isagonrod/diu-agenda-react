@@ -82,4 +82,4 @@ Para poder hacer el _Pipeline_ en Jenkins hay que seguir los siguientes pasos:
 4. Seleccionar 'Conectar' y 'Cliente SSH'. Copiar el comando y pegarlo en un terminal.
 5. Escribir el comando ``$ sudo chmod 400 <nombre.pem>`` para darle los permisos necesarios.
 6. Escribir el comando ``$ sudo su`` para pasar a ser superusuario.
-7. 
+7. A partir de ahí, seguir las instrucciones del PDF de clase.
